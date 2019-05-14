@@ -1,16 +1,8 @@
 package com.capgemini.foodApp.restaurant;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
-@Document
+@Document(collection="DEMO")
 public class RestaurantInfo {
 	
 	
@@ -34,7 +26,7 @@ public class RestaurantInfo {
 		this.city = city;
 		this.email = email;
 		this.password = password;
-		this.contact = contact;
+		this.contact = contact;	
 		this.breakfast = breakfast;
 		this.lunch = lunch;
 		this.dinner = dinner;

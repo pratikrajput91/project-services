@@ -16,7 +16,7 @@ import com.capgemini.foodApp.service.RestaurantService;
 
 @RestController
 @RequestMapping("/restro")
-@CrossOrigin(origins="*")
+@CrossOrigin("*")
 public class RestaurantController {
 
 	@Autowired
@@ -54,4 +54,8 @@ public class RestaurantController {
 
 	}
 	
-}
+	
+
+	}
+	
+

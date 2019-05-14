@@ -17,7 +17,7 @@ public class RestaurantServiceImpl implements RestaurantService {
 	@Override
 	public RestaurantInfo addDetails(RestaurantInfo restaurant) {
 		// TODO Auto-generated method stub
-		return rdao.save(restaurant);
+		return rdao.insert(restaurant);
 	}
 
 	@Override
